@@ -36,9 +36,37 @@
 # print(float(S))
 
 
-a, b, c = int(input()), int(input()), int(input())
-if a > b > c:
-    max = a
-    mid = b
-    min = c
-elif
+# a, b, c = int(input()), int(input()), int(input())
+# if a >= b >= c:
+#     max, mid, min = a, b, c
+# elif a >= c >= b:
+#     max, mid, min = a, c, b
+# elif b >= a >= c:
+#     max, mid, min = b, a, c
+# elif b >= c >= a:
+#     max, mid, min = b, c, a
+# elif c >= a >= b:
+#     max, mid, min = c, a, b
+# else:
+#     max, mid, min = c, b, a
+# print(max, min, mid, sep="\n")
+
+
+
+# num = input()
+# root = "программист"
+# ends = ("ов", "", "а", "а", "а", "ов", "ов", "ов", "ов", "ов")
+# if len(num) == 1:
+#     end = ends[int(num)]
+# else:
+#     if 10 < int(num[-2:]) < 19:
+#         end = "ов"
+#     else:
+#         end = ends[int(num[-1])]
+# print(num, root + end)
+
+
+
+number = input()
+if int(number[0]) + int(number[1]) + int(number[2]) == int(number[3]) + int(number[4]) + int(number[5]): print("Счастливый")
+else: print("Обычный")
