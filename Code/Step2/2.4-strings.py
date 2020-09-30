@@ -3,7 +3,7 @@
 # print((Gs + Cs) / len(chain) * 100)
 
 
-chain = input().lower()
+chain = input()
 res = chain[0]
 cnt = 0
 for sym in chain:
@@ -13,4 +13,5 @@ for sym in chain:
         res += str(cnt)
         res += sym
         cnt = 1
+res += str(cnt)
 print(res)
