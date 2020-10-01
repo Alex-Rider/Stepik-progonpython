@@ -12,17 +12,6 @@ def modify_list(l):
     l[:] = [x // 2 for x in l if x % 2 == 0]
 
 
-def update_dictionary(d, key, value):
-    if key not in d.keys():
-        d[key * 2] = list().append(value)
-    else:
-        d[key * 2].append(value)
-    return d
+def my_func(name, family):
+    print(f"Mister {family} has name {name}")
 
-d = {}
-print(update_dictionary(d, 1, -1))  # None
-print(d)                            # {2: [-1]}
-update_dictionary(d, 2, -2)
-print(d)                            # {2: [-1, -2]}
-update_dictionary(d, 1, -3)
-print(d)                            # {2: [-1, -2, -3]}
